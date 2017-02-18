@@ -14,8 +14,8 @@
         android:text="Record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
         android:id="@+id/recordButton" />
 
     <Button
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/enrollButton"
         android:layout_below="@+id/recordButton"
-        android:layout_alignLeft="@+id/recordButton"
-        android:layout_alignStart="@+id/recordButton" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Verify"
@@ -33,16 +33,28 @@
         android:layout_height="wrap_content"
         android:id="@+id/verifyButton"
         android:layout_below="@+id/enrollButton"
-        android:layout_alignLeft="@+id/enrollButton"
-        android:layout_alignStart="@+id/enrollButton" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Recognize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/verifyButton"
-        android:layout_alignLeft="@+id/verifyButton"
-        android:layout_alignStart="@+id/verifyButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
         android:id="@+id/recognizeButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@+id/recognizeButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/hackfsu" />
+
 
 </RelativeLayout>
